@@ -40,3 +40,4 @@ D:\0 Dotnet vsa\myTradingApp\obj\Debug\net8.0\refint\myTradingApp.dll
 D:\0 Dotnet vsa\myTradingApp\obj\Debug\net8.0\myTradingApp.pdb
 D:\0 Dotnet vsa\myTradingApp\obj\Debug\net8.0\myTradingApp.genruntimeconfig.cache
 D:\0 Dotnet vsa\myTradingApp\obj\Debug\net8.0\ref\myTradingApp.dll
+D:\0 Dotnet vsa\myTradingApp\obj\Debug\net8.0\myTradingApp.sourcelink.json
