@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CID6LoVjwM8V0lHDj8M4A80Igkj43JOSvp1IufTj96g=",
+  "Source": "myTradingApp",
+  "BasePath": "_content/myTradingApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
