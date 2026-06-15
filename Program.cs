@@ -1,8 +1,15 @@
 using MediatR;
+using myTradingApp.Data.Entity;
 using myTradingApp.Features.Test;
 using myTradingApp.Common.Interface;
 using System.Reflection;
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// Đăng ký DbContext vào DI Container
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 
