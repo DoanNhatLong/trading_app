@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using myTradingApp.Data.Entity;
 
 namespace myTradingApp.Features.User;
-
 public record Query : IRequest<List<UserDto>>;
 
 public class Handler(AppDbContext context) : IRequestHandler<Query, List<UserDto>>
