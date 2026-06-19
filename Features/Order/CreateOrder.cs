@@ -30,10 +30,10 @@ public class Endpoint : IEndPoint
 {
     public void MapEndPoints(IEndpointRouteBuilder app)
     {
-        app.MapPost("/order", (CreateOrderCommand command, IMediator mediator)
+        app.MapPost("/order", async (CreateOrderCommand command, IMediator mediator)
             =>
         {
-            var orderId = mediator.Send(command);
+            var orderId = await mediator.Send(command);
             return Results.Created($"/orders/{orderId}", orderId);
         });
     }
